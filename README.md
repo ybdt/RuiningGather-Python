@@ -1,2 +1,4 @@
-# RuiningGather-Python
-自动化资产收集工具
+待发布
+
+程序流程如下
+![image](./pic/01.png)
