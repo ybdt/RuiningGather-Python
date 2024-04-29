@@ -1,0 +1,11 @@
+有些接口（如：google）需要翻墙，故执行此程序时，需要挂全局代理，经测试，挂全局代理仍有些接口报错
+改在海外vps上跑，经测试，在海外vps上跑不会报错，但测试过自然资源部，在海外vps上跑，结果会少于在墙内跑
+
+
+--alive False   收集不存活的url，目的在于获取域名对应的ip，可能是历史解析ip
+--brute False   调用masscan爆破子域名
+--dns False  DNS解析子域
+
+
+python3 .\OneForAll\oneforall.py --target easyctid.cn --alive False --brute True --dns True run
+python3 .\OneForAll\oneforall.py --targets domains.txt --alive False --brute True --dns True run
